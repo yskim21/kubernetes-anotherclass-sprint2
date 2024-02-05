@@ -9,7 +9,7 @@ pipeline {
     environment {
         // 본인의 username으로 하실 분은 수정해주세요.
         DOCKERHUB_USERNAME = '1pro'
-        GITHUB_URL = 'https://github.com/k8s-1pro/kubernetes-anotherclass-sprint2.git'
+        GITHUB_URL = 'https://github.com/yskim21/kubernetes-anotherclass-sprint2.git'
 
         // 실습 넘버링
         CLASS_NUM = '2221'
@@ -19,7 +19,7 @@ pipeline {
         stage('소스파일 체크아웃') {
             steps {
                 // 소스코드를 가져올 Github 주소
-                git branch: 'main', url: 'https://github.com/k8s-1pro/kubernetes-anotherclass-api-tester.git'
+                git branch: 'main', url: 'https://github.com/yskim21/kubernetes-anotherclass-api-tester.git'
             }
         }
 
