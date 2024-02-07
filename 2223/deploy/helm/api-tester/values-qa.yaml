@@ -2,7 +2,7 @@
 replicaCount: 2
 
 image:
-  repository: 1pro/api-tester
+  repository: yskim21/api-tester
   pullPolicy: Always
   tag: "v1.0.0"
 
