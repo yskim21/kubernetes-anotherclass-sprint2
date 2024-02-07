@@ -4,7 +4,7 @@ replicaCount: 1
 image:
   repository: yskim21/api-tester
   pullPolicy: Always
-  tag: v1.0.0
+  tag: "v1.0.0"
 
 resources:
   limits:
