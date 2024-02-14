@@ -63,7 +63,7 @@ pipeline {
 
                     // 도커 빌드 및 업로드
                     if (DOCKERHUB_USERNAME == "yskim2164") {
-                        TAG = "1.0.1"  // 1pro useranme 수강생을 위한 고정 태그명
+                        TAG = "1.0.1-240207.071712"  // 1pro useranme 수강생을 위한 고정 태그명
                         sh "docker build ./${CLASS_NUM}/build/docker -t ${DOCKERHUB_USERNAME}/api-tester:${TAG}"
                     } else {
                         sh "docker build ./${CLASS_NUM}/build/docker -t ${DOCKERHUB_USERNAME}/api-tester:${TAG}"
