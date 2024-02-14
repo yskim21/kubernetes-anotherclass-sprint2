@@ -13,7 +13,7 @@ pipeline {
 
     environment {
         // 본인의 username으로 하실 분은 수정해주세요.
-        DOCKERHUB_USERNAME = 'yskim21'
+        DOCKERHUB_USERNAME = 'yskim2164'
         GITHUB_URL = 'https://github.com/k8s-1pro/kubernetes-anotherclass-sprint2.git'
 
         APP_VERSION = '1.1.1'
@@ -62,7 +62,7 @@ pipeline {
                     }
 
                     // 도커 빌드 및 업로드
-                    if (DOCKERHUB_USERNAME == "yskim21") {
+                    if (DOCKERHUB_USERNAME == "yskim2164") {
                         TAG = "1.0.1-231220.175735"  // 1pro useranme 수강생을 위한 고정 태그명
                         sh "docker build ./${CLASS_NUM}/build/docker -t ${DOCKERHUB_USERNAME}/api-tester:${TAG}"
                     } else {
